@@ -1,602 +1,345 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Jost';
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Jost', sans-serif;
+}
+
+body{
+    overflow-x:hidden;
 }
 
 header .navbar{
-    background-color: black;
-    height: 80px;
-    width: 100%;
-    padding-top: 15px;
-    position: fixed;
-    top: 0%;
-    position: relative;
+    background:#000;
+    height:80px;
+    width:100%;
+    position:fixed;
+    top:0;
+    z-index:1000;
 }
 
-header .navbar .nav-content img{
-    height: 40px;
-    width: 30px;
-    margin-top: 2px;
-    cursor: pointer;
-    margin-left: 25px;
+header .nav-content{
+    max-width:1200px;
+    margin:auto;
+    height:100%;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:0 15px;
 }
 
-header .navbar .nav-content h1{
-    display: inline;
-    margin-left: 2px;
-    cursor: pointer;
-    color: snow;
-    transition: 0.9s;
-    font-size: 200%;
+header .nav-content img{
+    width:32px;
 }
 
-header .navbar .nav-content h1:hover{
-    color: rgb(155, 122, 78);
+header .nav-content h1{
+    color:snow;
+    cursor:pointer;
 }
 
-header .navbar .nav-content a{
-    display: inline;
-    padding-left: 15px;
-    text-decoration: none;
-    color: snow;
-    transition: all 0.2s;
-    text-transform: uppercase;
+header .nav-content a{
+    color:snow;
+    text-decoration:none;
+    text-transform:uppercase;
 }
 
-header .navbar .nav-content a:hover{
-      color: rgb(155, 122, 78);
+header .nav-content i{
+    margin-left:auto;
+    color:snow;
 }
 
-header .navbar .nav-content i{
-   margin-left: 39%;
-   color: snow;
-cursor: pointer;
-transition: 0.2s;
+header .nav-content .btn{
+    background:rgb(155,122,78);
+    border:none;
+    color:snow;
+    padding:6px 15px;
+    border-radius:5px;
+    cursor:pointer;
 }
 
-header .navbar .nav-content i:hover{
-    color: rgb(155, 122, 78);
-}
-
-header .navbar .nav-content .btn{
-    margin-left: 1%;
-    height: 30px;
-    width: 80px;
-    background-color: rgb(155, 122, 78);
-    border: none;
-    color: snow;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: all 0.2s;
-}
-
-header .navbar .nav-content .btn:hover{
-    background-color:  snow;
-    color:  rgb(155, 122, 78);
-    border: 3px solid rgb(155, 122, 78);
+.background{
+    position:relative;
+    margin-top:80px;
 }
 
 .background img{
-    width: 100%;
+    width:100%;
+    height:80vh;
+    object-fit:cover;
 }
 
 .background h1{
-    height: 600px;
-    width: 600px;
-    color: snow;
-    position: absolute;
-    margin-top: -550px;
-    margin-left: 5%;
-    text-transform: uppercase;
-    font-size: 300%;
+    position:absolute;
+    top:25%;
+    left:5%;
+    color:snow;
+    max-width:500px;
+    font-size:3rem;
 }
 
 .background p{
-        height: 600px;
-        width: 600px;
-        color: snow;
-        position: absolute;
-        margin-top: -400px;
-        margin-left: 5%;
-        font-size: 100%;
+    position:absolute;
+    top:45%;
+    left:5%;
+    max-width:500px;
+    color:snow;
+}
+
+.background .button,
+.background .button2{
+    position:absolute;
+    bottom:80px;
+    left:5%;
+    background:rgb(155,122,78);
+    padding:10px 18px;
+    border:none;
+    border-radius:5px;
+    color:snow;
+    cursor:pointer;
 }
 
 .background .button{
-    position: absolute;
-    height: 50px;
-    width: 100px;
-    background-color:  rgb(155, 122, 78);
-    border: none;
-    cursor: pointer;
-    color: snow;
-    border-radius: 5px;
-    font-size: 15px;
-    margin-left: 20px;
-    margin-left: -95%;
-    margin-top: 450px;
+    left:180px;
 }
 
-.background .button:hover{
- color:  rgb(155, 122, 78);
- background-color: snow;
- border: 3px solid rgb(155, 122, 78);
-}
-
-.background .button2{
-    position: absolute;
-    height: 50px;
-    width: 100px;
-    background-color:  rgb(155, 122, 78);
-    border: none;
-    cursor: pointer;
-    color: snow;
-    border-radius: 5px;
-    font-size: 15px;
-    margin-left: 20px;
-    margin-left: -85%;
-    margin-top: 450px;
-}
-
-.background .button2:hover{
-    color:  rgb(155, 122, 78);
- background-color: snow;
- border: 3px solid rgb(155, 122, 78);
+.menu{
+    padding:60px 5%;
 }
 
 .menu h1{
-     text-align: center;
-     text-transform: uppercase;
-     margin-top: 10px;
-     font-size: 300%;
-     color: rgb(155, 122, 78);
-} 
+    text-align:center;
+    color:rgb(155,122,78);
+}
 
 .menu p{
-    text-align: center;
+    text-align:center;
 }
 
-.menu .type1{
-    height: 55%;
-    width: 25%;
-    margin-top: 5%;
-    margin-left: 7%;
-    display: inline-block;
-}
-
-.menu .type1 img{
-    height: 100%;
-    cursor: pointer;
-    width: 100%;
-    border-radius: 5px;
-}
-
-.menu .type1 h2{
-    text-align: center;
-    color: rgb(155, 122, 78);
-}
-
-.menu .type1 p{
-    text-align: justify;
-}
-
-.menu .type1 .type1-btn{
-    background-color: rgb(155, 122, 78);
-    border: none;
-    border-radius: 5px;
-    color: snow;
-    margin-top: 5px;
-    align-items: center;
-height: 30px;
-margin-left: 120px;
-width: 80px;
-cursor: pointer;
-}
-
-.menu .type1 .type1-btn:hover{
-    background-color: snow;
-    color: rgb(155, 122, 78);
-    border: 3px solid rgb(155, 122, 78);
-}
-
-.menu .type2{
-    display: inline-block;
-    height: 55%;
-    width: 25%;
-    margin-top: 5%;
-    margin-left: 5%;
-}
-
-.menu .type2 img{
-    height: 100%;
-    width: 100%;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.menu .type2 h2{
-    text-align: center;
-    color: rgb(155, 122, 78);
-}
-
-.menu .type2 p{
-    text-align: justify;
-}
-
-.menu .type2 .type2-btn{
-    background-color: rgb(155, 122, 78);
-    border: none;
-    border-radius: 5px;
-    color: snow;
-    margin-top: 5px;
-    align-items: center;
-height: 30px;
-margin-left: 120px;
-width: 80px;
-cursor: pointer;
-}
-
-.menu .type2 .type2-btn:hover{
-    background-color: snow;
-    color: rgb(155, 122, 78);
-    border: 3px solid rgb(155, 122, 78);
-}
-
+.menu .type1,
+.menu .type2,
 .menu .type3{
-    display: inline-block;
-    height: 55%;
-    width: 25%;
-    margin-top: 5%;
-    margin-left: 5%;
+    width:30%;
+    display:inline-block;
+    vertical-align:top;
+    margin-top:40px;
 }
 
-.menu .type3 img{
-    border-radius: 5px;
-    cursor: pointer;
-    height: 100%;
-    width: 100%;
+.menu img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:5px;
 }
 
-.menu .type3 h2{
-    text-align: center;
-    color: rgb(155, 122, 78);
+.menu h2{
+    text-align:center;
+    color:rgb(155,122,78);
 }
 
-.menu .type3 p{
-    text-align: justify;
+.menu p{
+    text-align:justify;
+    padding:5px 0;
 }
 
-.menu .type3 .type3-btn{
-    background-color: rgb(155, 122, 78);
-    border: none;
-    border-radius: 5px;
-    color: snow;
-    margin-top: 5px;
-height: 30px;
-margin-left: 120px;
-width: 80px;
-cursor: pointer;
+.menu button{
+    display:block;
+    margin:auto;
+    margin-top:8px;
+    border:none;
+    border-radius:5px;
+    padding:6px 14px;
+    background:rgb(155,122,78);
+    color:snow;
+    cursor:pointer;
 }
 
-.menu .type3 .type3-btn:hover{
-    background-color: snow;
-    color: rgb(155, 122, 78);
-    border: 3px solid rgb(155, 122, 78);
+.about{
+    position:relative;
 }
 
 .about img{
-    width: 100%;
-    height: 10%;
-    margin-top: 5%;
-    position: relative;
+    width:100%;
+    height:70vh;
+    object-fit:cover;
 }
 
-.about .about-content{
-    position: absolute;
-    height: 50%;
-    width: 40%;
-    margin-top: -35%;
-    padding-left: 5%;
-    text-align: left;
-    color: snow;
+.about-content{
+    position:absolute;
+    top:25%;
+    left:10%;
+    max-width:500px;
+    color:snow;
 }
 
-.about .about-content h1{
-    font-size: 300%;
-    text-transform: uppercase;
+.about-content h1{
+    font-size:2.5rem;
 }
 
-.about .about-content p{
-    font-size: 100%;
+.about-content button{
+    margin-top:14px;
+    background:rgb(155,122,78);
+    color:snow;
+    border:none;
+    padding:10px 18px;
+    border-radius:5px;
 }
 
-.about .about-content .about-btn{
-    margin-top: 15px;
-    height: 50px;
-    width: 100px;
-    background-color: rgb(155, 122, 78);
-    color: snow;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 100%;
-}
-
-.about .about-content .about-btn:hover{
-    background-color: snow;
-    color: rgb(155, 122, 78);
-    border: 3px solid rgb(155, 122, 78);
+.testimonials{
+    padding:60px 5%;
 }
 
 .testimonials h1{
-    text-transform: uppercase;
-    margin-top: 20px;
-    text-align: center;
-    color: rgb(155, 122, 78);
-    font-size: 300%;
+    text-align:center;
+    color:rgb(155,122,78);
 }
 
-.testimonials p{
-    font-size: 100%;
-    text-align: center;
+.testimonials > p{
+    text-align:center;
 }
 
-.testimonials .box1{
-    height: 40%;
-    width: 30%;
-    border: 4px solid rgb(155, 122, 78);
-    background-color: rgb(155, 122, 78);
-    color: snow;
-    margin-top: 2%;
-    margin-left: 15%;
-    border-radius: 5px;
-    display: inline-block;
-    cursor: pointer;
-}
-.testimonials .box1:hover{
-    color: rgb(155, 122, 78);
-    background-color: snow;
- 
-}
-
-.testimonials .box1 i{
-    font-size: 200%;
-    margin-left: 90%;
-}
-
-.testimonials .box1 img{
-    width: 10%;
-    height: 10%;
-    border-radius: 50%;
-    padding-top: 5px;
-    padding-left: 5px;
-}
-
-.testimonials .box1 p{
-    text-align: justify;
-    margin-left: 5px;
-}
-
-.testimonials .box2{
-    height: 40%;
-    width: 30%;
-    border: 4px solid rgb(155, 122, 78);
-    background-color: rgb(155, 122, 78);
-    color: snow;
-    margin-top: 2%;
-    margin-left: 5%;
-    border-radius: 5px;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.testimonials .box2 i{
-    font-size: 200%;
-    margin-left: 90%;
-}
-
-.testimonials .box2 img{
-    width: 10%;
-    height: 10%;
-    border-radius: 50%;
-    padding-top: 5px;
-    padding-left: 5px;
-}
-
-.testimonials .box2 p{
-    text-align: justify;
-    margin-left: 5px;
-}
-
-.testimonials .box2:hover{
-    color: rgb(155, 122, 78);
-    background-color: snow;
-    
-}
-
+.testimonials .box1,
+.testimonials .box2,
 .testimonials .box3{
-    height: 40%;
-    width: 30%;
-    border: 4px solid rgb(155, 122, 78);
-    background-color: rgb(155, 122, 78);
-    color: snow;
-    margin-top: 2%;
-    margin-left: 32%;
-    border-radius: 5px;
-    display: inline-block;
-    cursor: pointer;
+    width:30%;
+    background:rgb(155,122,78);
+    color:snow;
+    padding:20px;
+    border-radius:6px;
+    margin-top:30px;
+    display:inline-block;
+    vertical-align:top;
 }
 
-.testimonials .box3 img{
-    width: 10%;
-    height: 10%;
-    border-radius: 50%;
-    padding-top: 5px;
-    padding-left: 5px;
+.testimonials i{
+    float:right;
 }
 
-.testimonials .box3 i{
-    font-size: 200%;
-    margin-left: 90%;
+.testimonials img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
 }
 
-.testimonials .box3 p{
-    text-align: justify;
-    margin-left: 5px;
-}
-
-.testimonials .box3:hover{
-    color: rgb(155, 122, 78);
-    background-color: snow;
-    
+.ad{
+    position:relative;
 }
 
 .ad img{
-    width: 100%;
-    margin-top: 3%;
-    position: relative;
+    width:100%;
 }
 
 .ad h1{
-    position: absolute;
-    font-size: 300%;
-    margin-top: -25%;
-    color: snow;
-    text-transform: uppercase;
-    text-align: left;
-    margin-left: 5%;
-    height: 60%;
-    width: 50%;
-    position: relative;
+    position:absolute;
+    top:35%;
+    left:5%;
+    color:snow;
+    max-width:600px;
 }
 
-.ad i #play{
-    position: absolute;
-    font-size: 400%;
-    gap: 5%;
-    margin-left: 5%;
-    cursor: pointer;
-    color: rgb(255, 255, 255);
-}
-
-.ad i:hover{
-    color: rgb(155, 122, 78);
+.contact{
+    position:relative;
+    padding:60px 5%;
 }
 
 .contact img{
-    margin-top: 20%;
+    width:100%;
+    height:70vh;
+    object-fit:cover;
 }
 
 .contact h1{
-    font-size: 300%;
-    color: rgb(155, 122, 78);
-    margin-top: -55%;
-    text-align: center;
-    margin-left: 23%;
+    text-align:center;
+    color:rgb(155,122,78);
 }
 
-.b1{
-    position: absolute;
-    height: 60%;
-    width: 20%;
-    margin-left: 2%;
-    margin-top: 3%;
+.b1,
+.b2,
+.main-menu,
+.rated{
+    width:22%;
+    display:inline-block;
+    vertical-align:top;
+    margin:20px 1%;
 }
 
-.b1 h2{
-    color: rgb(155, 122, 78);
-    font-size: 200%;
-    text-transform: capitalize;
+.b1 h2,
+.b2 h2,
+.main-menu h2,
+.rated h2{
+    color:rgb(155,122,78);
 }
 
-.b1 p{
-    margin-top: 5px;
-    text-align: justify;
-}
-
-.b1 button.contact-us{
-    background-color: rgb(155, 122, 78);
-    color: snow;
-    margin-top: 10px;
-    cursor: pointer;
-    height: 40px;
-    width: 80px;
-    border: none;
-    border-radius: 5%;
-}
-
-.b1 button.contact-us:hover{
-    color: rgb(155, 122, 78);
-    background-color: snow;
-    border: 3px solid rgb(155, 122, 78);
-}
-
-.b2{
-    position: absolute;
-    height: 60%;
-    width: 20%;
-    margin-left: 75%;
-    margin-top: 3%;
-}
-
-.b2 h2{
-    color: rgb(155, 122, 78);
-    font-size: 200%;
-}
-
-.b2 p{
-    margin-top: 5px;
-    text-align: justify;
+.b1 button{
+    margin-top:10px;
+    background:rgb(155,122,78);
+    border:none;
+    color:snow;
+    padding:8px 12px;
+    border-radius:5px;
 }
 
 .b2 i{
-    font-size: 150%;
-    padding-top: 10px;
-    cursor: pointer;
-    color: rgb(155, 122, 78);
+    font-size:20px;
+    margin-right:8px;
+    color:rgb(155,122,78);
 }
 
-.b2 i:hover{
-    font-size: 180%;
-}
-
-.main-menu{
-    position: absolute;
-    height: 60%;
-    width: 20%;
-    margin-left: 28%;
-    margin-top: 3%;
-}
-
-.main-menu h2{
-    color: rgb(155, 122, 78);
-    font-size: 200%;    
-}
-
-.main-menu p{
-    margin-top: 5px;
-    text-align: justify;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.rated{
-    position: absolute;
-    height: 60%;
-    width: 20%;
-    margin-left: 50%;
-    margin-top: 3%;
-}
-
-.rated h2{
-    color: rgb(155, 122, 78);
-    font-size: 200%;  
-}
-
+.main-menu p,
 .rated p{
-    margin-top: 5px;
-    text-align: justify;
-    text-decoration: underline;
-    cursor: pointer;
+    cursor:pointer;
+    text-decoration:underline;
+}
+
+@media(max-width:1024px){
+    .menu .type1,
+    .menu .type2,
+    .menu .type3,
+    .testimonials .box1,
+    .testimonials .box2,
+    .testimonials .box3{
+        width:100%;
+    }
+
+    .b1,
+    .b2,
+    .main-menu,
+    .rated{
+        width:100%;
+    }
+
+    .background h1{
+        font-size:2rem;
+    }
+}
+
+@media(max-width:600px){
+    header .nav-content a,
+    header .nav-content i,
+    header .nav-content .btn{
+        display:none;
+    }
+
+    .background h1,
+    .background p{
+        max-width:90%;
+    }
+
+    .background .button,
+    .background .button2{
+        bottom:40px;
+    }
+
+    .background .button{
+        left:140px;
+    }
+
+    .about-content{
+        position:static;
+        background:#000;
+        padding:20px;
+    }
+
+    .about img{
+        height:50vh;
+    }
 }
